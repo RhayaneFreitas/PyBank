@@ -1,0 +1,16 @@
+        self.product1Shop_button.clicked.connect(self.shop1)
+        self.product2Shop_button.clicked.connect(self.shop2)
+        self.product3Shop_button.clicked.connect(self.shop3)
+        self.product4Shop_button.clicked.connect(self.shop4)
+        self.product5Shop_button.clicked.connect(self.shop5)
+        self.product6Shop_button.clicked.connect(self.shop6)
+
+
+                if self.user.balance >= valueProdut:
+            self.user.balance -= valueProdut
+            msg = "Product purchase made successfully"
+
+        else:
+           msg = "Insufficient balance to make this purchase"
+
+        self.msgShop_label.setText(msg)
